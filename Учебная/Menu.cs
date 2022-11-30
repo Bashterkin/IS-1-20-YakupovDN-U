@@ -16,5 +16,11 @@ namespace Учебная
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            One form1 = new One();
+            form1.ShowDialog();
+        }
     }
 }
