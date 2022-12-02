@@ -28,5 +28,11 @@ namespace Учебная
             Two form2 = new Two();
             form2.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Three form3 = new Three();
+            form3.ShowDialog();
+        }
     }
 }

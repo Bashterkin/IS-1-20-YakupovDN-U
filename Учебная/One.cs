@@ -56,7 +56,7 @@ namespace Учебная
             public int freq { get; set; }
             public string manufacturer { get; set; }
             public int memory { get; set; }
-            public Videocard(int Price, int Date, int Freq, string Manufacturer, int Memory, P Articul) : base(Price, Date, Articul)
+            public Videocard(int Price, int Date, int Freq, string Manufacturer, int Memory, P Articul) : base(Price, Date, Articul) 
             {
                 freq = Freq;
                 manufacturer = Manufacturer;
@@ -64,7 +64,7 @@ namespace Учебная
             }
             public new void Display()
             {
-                MessageBox.Show($"Артикул: {articul}\nЦена: {price}\nГод выпуска: {date}\nЧастота: {freq}\nПроизводитель: {manufacturer}\nОбъем памяти: {memory} Гб");
+                MessageBox.Show($"Артикул: {articul}\nЦена: {price}\nГод выпуска: {date}\nЧастота: {freq}\nПроизводитель: {manufacturer}\nВидеопамять: {memory} Гб");
             }
         }
 
@@ -81,7 +81,7 @@ namespace Учебная
             listBox1.Items.Add($"Год Выпуска: {textBox2.Text}");
             listBox1.Items.Add($"Частота оборотов: {textBox3.Text}");
             listBox1.Items.Add($"Интерфейс: {textBox4.Text}");
-            listBox1.Items.Add($"Объем памяти: {textBox5.Text} Гб");
+            listBox1.Items.Add($"Объем: {textBox5.Text} Гб");
             Harddrive<int> v1 = new Harddrive<int>(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox3.Text), textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox9.Text));
             v1.Display();
         }
@@ -91,7 +91,7 @@ namespace Учебная
             listBox1.Items.Clear();
             listBox1.Items.Add($"Артикул: {textBox9.Text}");
             listBox1.Items.Add($"Цена: {textBox1.Text}");
-            listBox1.Items.Add($"Год Выпуска: {textBox2.Text}");
+            listBox1.Items.Add($"Год Выпуска: {textBox2.Text}"); // стандартная практика
             listBox1.Items.Add($"Частота: {textBox6.Text}");
             listBox1.Items.Add($"Производитель: {textBox7.Text}");
             listBox1.Items.Add($"Видеопамять: {textBox8.Text} Гб");

@@ -22,6 +22,7 @@ namespace Учебная
 
         class Conn
         {
+            //реквизиты входа
             string server = "chuc.caseum.ru";
             string port = "33333";
             string user = "uchebka";
@@ -30,8 +31,7 @@ namespace Учебная
             public string connStr;
             public string Connectreturn()
             {
-                return connStr = $"host={server};port={port};user={user};database={database};password={password}";
-            }
+                return connStr = $"host={server};port={port};user={user};database={database};password={password}";      //метод возвращающий строку входа
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Учебная
             {
                 connect = new Conn();
                 connect.Connectreturn();
-                conn = new MySqlConnection(connect.connStr);
+                conn = new MySqlConnection(connect.connStr);       // Оно живое(!)
                 conn.Open();
                 MessageBox.Show("Подключение открыто");
 
