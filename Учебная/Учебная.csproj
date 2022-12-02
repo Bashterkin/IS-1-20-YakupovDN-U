@@ -84,6 +84,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Four.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Four.Designer.cs">
+      <DependentUpon>Four.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>

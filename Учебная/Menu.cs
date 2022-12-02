@@ -34,5 +34,11 @@ namespace Учебная
             Three form3 = new Three();
             form3.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Four form4 = new Four();
+            form4.ShowDialog();
+        }
     }
 }

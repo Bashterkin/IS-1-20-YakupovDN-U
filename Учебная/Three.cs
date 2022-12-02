@@ -32,13 +32,13 @@ namespace Учебная
                 conn.Open();
                 string sql = "SELECT * FROM Hotel";
                 dataGridView1.Columns.Add("id_hotel", "ID Отеля");
-                dataGridView1.Columns["id_hotel"].Width = 100;
+                dataGridView1.Columns["id_hotel"].Width = 50;
                 dataGridView1.Columns.Add("name_hotel", "Название");
-                dataGridView1.Columns["name_hotel"].Width = 185;
+                dataGridView1.Columns["name_hotel"].Width = 150;
                 dataGridView1.Columns.Add("stars_hotel", "Количество звёзд");       // датагрид придумали садисты
-                dataGridView1.Columns["stars_hotel"].Width = 185;
+                dataGridView1.Columns["stars_hotel"].Width = 70;
                 dataGridView1.Columns.Add("country_hotel", "Страна");
-                dataGridView1.Columns["country_hotel"].Width = 100;
+                dataGridView1.Columns["country_hotel"].Width = 70;
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())

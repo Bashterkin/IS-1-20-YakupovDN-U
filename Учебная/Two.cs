@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static Учебная.Program;
 
 namespace Учебная
 {
@@ -31,7 +32,8 @@ namespace Учебная
             public string connStr;
             public string Connectreturn()
             {
-                return connStr = $"host={server};port={port};user={user};database={database};password={password}";      //метод возвращающий строку входа
+                return connStr = $"host={server};port={port};user={user};database={database};password={password}";//            метод возвращающий строку вх
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
