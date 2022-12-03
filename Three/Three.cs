@@ -27,21 +27,25 @@ namespace Three
             {
 
                 conn.Open();
-                string sql = "SELECT * FROM Contract";
+                string sql = "SELECT hotel_contract, pricetour_contract, employ_contract, tour_contract, fio_contractor, id_contract, id_contractor FROM Contract INNER JOIN Contractor ON id_contract = id_contractor ORDER BY id_contract;";
                 dataGridView1.Columns.Add("id_contract", "ID Контракта");
                 dataGridView1.Columns["id_contract"].Width = 50;
                 dataGridView1.Columns.Add("hotel_contract", "Отель");
                 dataGridView1.Columns["hotel_contract"].Width = 150;
-                dataGridView1.Columns.Add("pricetour_contract", "Цена тура");       // датагрид придумали садисты
+                dataGridView1.Columns.Add("pricetour_contract", "Цена тура");
                 dataGridView1.Columns["pricetour_contract"].Width = 70;
+                dataGridView1.Columns.Add("employ_contract", "Сотрудник");
+                dataGridView1.Columns["employ_contract"].Width = 150;
                 dataGridView1.Columns.Add("tour_contract", "Страна");
                 dataGridView1.Columns["tour_contract"].Width = 70;
+                dataGridView1.Columns.Add("fio_contractor", "ФИО");
+                dataGridView1.Columns["fio_contractor"].Width = 150;
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     // ридер заполняет строки в гриде
-                    dataGridView1.Rows.Add(reader["id_hotel"].ToString(), reader["name_hotel"].ToString(), reader["stars_hotel"].ToString(), reader["country_hotel"].ToString());
+                    dataGridView1.Rows.Add(reader["id_contract"].ToString(), reader["hotel_contract"].ToString(), reader["pricetour_contract"].ToString(), reader["employ_contract"].ToString(), reader["tour_contract"].ToString(), reader["fio_contractor"].ToString());
                 }
                 reader.Close();
             }
