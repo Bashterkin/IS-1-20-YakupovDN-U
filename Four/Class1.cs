@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Four
 {
-    internal class Class1
+    public class Class1
     {
         string server = "chuc.caseum.ru";
         string port = "33333";

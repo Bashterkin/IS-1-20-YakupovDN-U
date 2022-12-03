@@ -11,6 +11,7 @@ using Two;
 using One;
 using Three;
 using Four;
+using Five;
 
 namespace Учебная
 {
@@ -43,6 +44,12 @@ namespace Учебная
         {
             Four.Four form4 = new Four.Four();
             form4.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Five.Five form5 = new Five.Five();
+            form5.ShowDialog();
         }
     }
 }

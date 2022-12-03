@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1F3C4B3-1633-4FEA-A000-6C2818278F42}</ProjectGuid>
+    <ProjectGuid>{83D88212-2FDE-4E4C-807A-FF0C5752D536}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Учебная</RootNamespace>
-    <AssemblyName>Учебная</AssemblyName>
+    <RootNamespace>Five</RootNamespace>
+    <AssemblyName>Five</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -84,16 +84,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs">
+    <Compile Include="Five.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="Five.Designer.cs">
+      <DependentUpon>Five.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Five.resx">
+      <DependentUpon>Five.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,25 +119,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Five\Five.csproj">
-      <Project>{83D88212-2FDE-4E4C-807A-FF0C5752D536}</Project>
-      <Name>Five</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Four\Four.csproj">
-      <Project>{BC05A65A-14FE-4CDE-8AF5-0EDBBE72ED13}</Project>
+      <Project>{bc05a65a-14fe-4cde-8af5-0edbbe72ed13}</Project>
       <Name>Four</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\One\One.csproj">
-      <Project>{849E790F-6349-456D-A2A7-C1A2CDB66259}</Project>
-      <Name>One</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Three\Three.csproj">
-      <Project>{5A89B652-610D-4014-B4D6-8B01BC42BB1A}</Project>
-      <Name>Three</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Two\Two.csproj">
-      <Project>{272D6134-B7DD-4CB0-A1E3-E44C4240D832}</Project>
-      <Name>Two</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

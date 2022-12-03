@@ -16,7 +16,6 @@ namespace Four
     {
         MySqlConnection conn;
         Class1 connect;
-        string id_selected_rows = "0";
         public Four()
         {
             InitializeComponent();
