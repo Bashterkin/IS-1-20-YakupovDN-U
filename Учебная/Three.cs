@@ -30,15 +30,15 @@ namespace Учебная
             {
                 
                 conn.Open();
-                string sql = "SELECT * FROM Hotel";
-                dataGridView1.Columns.Add("id_hotel", "ID Отеля");
-                dataGridView1.Columns["id_hotel"].Width = 50;
-                dataGridView1.Columns.Add("name_hotel", "Название");
-                dataGridView1.Columns["name_hotel"].Width = 150;
-                dataGridView1.Columns.Add("stars_hotel", "Количество звёзд");       // датагрид придумали садисты
-                dataGridView1.Columns["stars_hotel"].Width = 70;
-                dataGridView1.Columns.Add("country_hotel", "Страна");
-                dataGridView1.Columns["country_hotel"].Width = 70;
+                string sql = "SELECT * FROM Contract";
+                dataGridView1.Columns.Add("id_contract", "ID Контракта");
+                dataGridView1.Columns["id_contract"].Width = 50;
+                dataGridView1.Columns.Add("hotel_contract", "Отель");
+                dataGridView1.Columns["hotel_contract"].Width = 150;
+                dataGridView1.Columns.Add("pricetour_contract", "Цена тура");       // датагрид придумали садисты
+                dataGridView1.Columns["pricetour_contract"].Width = 70;
+                dataGridView1.Columns.Add("tour_contract", "Страна");
+                dataGridView1.Columns["tour_contract"].Width = 70;
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
