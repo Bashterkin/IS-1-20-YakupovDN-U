@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Four.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,9 @@
     <Compile Include="Two.Designer.cs">
       <DependentUpon>Two.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Four.resx">
+      <DependentUpon>Four.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
