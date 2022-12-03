@@ -1,16 +1,16 @@
-﻿namespace Учебная
+﻿namespace Two
 {
     partial class Two
     {
         /// <summary>
-        /// Required designer variable.
+        /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         private void InitializeComponent()
         {
@@ -33,9 +33,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(259, 130);
+            this.button1.Location = new System.Drawing.Point(160, 105);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 146);
+            this.button1.Size = new System.Drawing.Size(274, 179);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,3 +58,4 @@
         private System.Windows.Forms.Button button1;
     }
 }
+

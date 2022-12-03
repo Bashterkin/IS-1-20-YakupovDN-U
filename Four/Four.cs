@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using static Учебная.Class1;
+using static Four.Class1;
 
-namespace Учебная
+namespace Four
 {
     public partial class Four : Form
     {
@@ -51,16 +51,16 @@ namespace Учебная
             {
                 conn.Close();
             }
-            
         }
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             conn.Open();
 
-             // 1 - тоби
-             // 2 - эндрю 
-             // 3 - том
-                
+            // 1 - тоби
+            // 2 - эндрю 
+            // 3 - том
+
             // Переменная id берёт индекс строки и прибавляет 1, таким образом мы равняем переменную id с id пользователей в БД
             int id = dataGridView1.SelectedCells[0].RowIndex + 1;
             string url = $"SELECT photoUrl FROM t_datatime WHERE id = {id}";

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Учебная
+namespace One
 {
     public partial class One : Form
     {
         public One()
         {
             InitializeComponent();
+        }
+
+        private void Onee_Load(object sender, EventArgs e)
+        {
+
         }
         public abstract class Сomponents<P>
         {
@@ -27,9 +32,9 @@ namespace Учебная
                 date = Date;
                 articul = Articul;
             }
-            public void Display()
+            public string Display()
             {
-                MessageBox.Show($"Артикул: {articul}\nЦена:{price}\nГод выпуска: {date} ");
+                return($"Артикул: {articul} Цена:{price} Год выпуска: {date} ");
             }
         }
         public class Harddrive<P> : Сomponents<P>
@@ -46,9 +51,9 @@ namespace Учебная
 
             }
 
-            public new void Display()
+            public new string Display()
             {
-                MessageBox.Show($"Артикул: {articul}\nЦена:{price}\nГод выпуска: {date}\nКоличество оборотов: {turnovers}\nИнтерфейс: {interfac}\nОбъем: {volume} Гб");
+                return($"Артикул:{articul} Цена:{price} Год выпуска: {date} Количество оборотов: {turnovers} Интерфейс: {interfac} Объем: {volume} Гб");
             }
         }
         class Videocard<P> : Сomponents<P>
@@ -56,47 +61,30 @@ namespace Учебная
             public int freq { get; set; }
             public string manufacturer { get; set; }
             public int memory { get; set; }
-            public Videocard(int Price, int Date, int Freq, string Manufacturer, int Memory, P Articul) : base(Price, Date, Articul) 
+            public Videocard(int Price, int Date, int Freq, string Manufacturer, int Memory, P Articul) : base(Price, Date, Articul)
             {
                 freq = Freq;
                 manufacturer = Manufacturer;
                 memory = Memory;
             }
-            public new void Display()
+            public new string Display()
             {
-                MessageBox.Show($"Артикул: {articul}\nЦена: {price}\nГод выпуска: {date}\nЧастота: {freq}\nПроизводитель: {manufacturer}\nВидеопамять: {memory} Гб");
+                return($"Артикул: {articul} Цена: {price} Год выпуска: {date} Частота: {freq} Производитель: {manufacturer} Видеопамять: {memory} Гб");
             }
-        }
-
-        private void One_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            listBox1.Items.Add($"Артикул: {textBox9.Text}");
-            listBox1.Items.Add($"Цена: {textBox1.Text}");
-            listBox1.Items.Add($"Год Выпуска: {textBox2.Text}");
-            listBox1.Items.Add($"Частота оборотов: {textBox3.Text}");
-            listBox1.Items.Add($"Интерфейс: {textBox4.Text}");
-            listBox1.Items.Add($"Объем: {textBox5.Text} Гб");
             Harddrive<int> v1 = new Harddrive<int>(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox3.Text), textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox9.Text));
-            v1.Display();
+            listBox1.Items.Add(v1.Display());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            listBox1.Items.Add($"Артикул: {textBox9.Text}");
-            listBox1.Items.Add($"Цена: {textBox1.Text}");
-            listBox1.Items.Add($"Год Выпуска: {textBox2.Text}"); // стандартная практика
-            listBox1.Items.Add($"Частота: {textBox6.Text}");
-            listBox1.Items.Add($"Производитель: {textBox7.Text}");
-            listBox1.Items.Add($"Видеопамять: {textBox8.Text} Гб");
             Videocard<int> v1 = new Videocard<int>(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox6.Text), textBox7.Text, Convert.ToInt32(textBox8.Text), Convert.ToInt32(textBox9.Text));
-            v1.Display();
+            listBox1.Items.Add(v1.Display());
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Учебная
+namespace Four
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Учебная
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new Four());
         }
     }
 }

@@ -1,17 +1,16 @@
-﻿
-namespace Учебная
+﻿namespace Three
 {
     partial class Three
     {
         /// <summary>
-        /// Required designer variable.
+        /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +20,11 @@ namespace Учебная
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         private void InitializeComponent()
         {
@@ -36,9 +35,9 @@ namespace Учебная
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(63, 38);
+            this.button1.Location = new System.Drawing.Point(12, 60);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 116);
+            this.button1.Size = new System.Drawing.Size(152, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,12 +45,10 @@ namespace Учебная
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(245, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(307, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(396, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(481, 212);
             this.dataGridView1.TabIndex = 1;
             // 
             // Three
@@ -75,3 +72,4 @@ namespace Учебная
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
+

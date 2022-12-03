@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Two;
+using One;
+using Three;
+using Four;
 
 namespace Учебная
 {
@@ -19,25 +23,25 @@ namespace Учебная
 
         private void button1_Click(object sender, EventArgs e)
         {
-            One form1 = new One();
+            One.One form1 = new One.One();
             form1.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Two form2 = new Two();
+            Two.Two form2 = new Two.Two();
             form2.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Three form3 = new Three();
+            Three.Three form3 = new Three.Three();
             form3.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Four form4 = new Four();
+            Four.Four form4 = new Four.Four();
             form4.ShowDialog();
         }
     }

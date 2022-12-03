@@ -8,17 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using static Учебная.Program;
+using static Three.Program;
 
-
-namespace Учебная
+namespace Three
 {
     public partial class Three : Form
     {
-            
-            MySqlConnection conn;
-            Conn connect;
-
+        MySqlConnection conn;
+        Conn connect;
         public Three()
         {
             InitializeComponent();
@@ -28,7 +25,7 @@ namespace Учебная
         {
             try
             {
-                
+
                 conn.Open();
                 string sql = "SELECT * FROM Contract";
                 dataGridView1.Columns.Add("id_contract", "ID Контракта");
@@ -57,9 +54,10 @@ namespace Учебная
                 conn.Close();
             }
         }
+
         private void Three_Load(object sender, EventArgs e)
         {
-            //  Объявляем подключение
+              //Объявляем подключение
             connect = new Conn();
             connect.Connectreturn();
             conn = new MySqlConnection(connect.connStr);

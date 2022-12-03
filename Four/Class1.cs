@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Учебная
+namespace Four
 {
-    class Class1
+    internal class Class1
     {
-        string server = "10.90.12.110";
+        string server = "chuc.caseum.ru";
         string port = "33333";
         string user = "st_1_20_32";
         string database = "is_1_20_st32_KURS";

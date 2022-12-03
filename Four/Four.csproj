@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1F3C4B3-1633-4FEA-A000-6C2818278F42}</ProjectGuid>
+    <ProjectGuid>{BC05A65A-14FE-4CDE-8AF5-0EDBBE72ED13}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Учебная</RootNamespace>
-    <AssemblyName>Учебная</AssemblyName>
+    <RootNamespace>Four</RootNamespace>
+    <AssemblyName>Four</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -91,40 +91,10 @@
     <Compile Include="Four.Designer.cs">
       <DependentUpon>Four.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="One.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="One.Designer.cs">
-      <DependentUpon>One.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Three.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Three.Designer.cs">
-      <DependentUpon>Three.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Two.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Two.Designer.cs">
-      <DependentUpon>Two.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Four.resx">
       <DependentUpon>Four.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="One.resx">
-      <DependentUpon>One.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,12 +105,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Three.resx">
-      <DependentUpon>Three.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Two.resx">
-      <DependentUpon>Two.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
